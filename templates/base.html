@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Note {% endblock %}</title>
+</head>
+<body>
+    <div>
+        <a href="{{ url_for('index') }}"> Home </a> &nbsp
+        <a href="{{ url_for('hello', name='аноним') }}"> Hi </a> &nbsp
+        <a href="{{ url_for('add') }}"> To add a new note </a> &nbsp
+    </div>
+    <hr>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>Site for notes</div>
+    <h2>Все заметки</h2>
+    <table border = "1">
+        <tr>
+            <th> Date </th>
+            <th> Note </th>
+        </tr>
+        {% for notes in notes_list %}
+        <tr>
+            <td>
+                {{ notes }}
+            </td>
+        </tr>
+        {% endfor %}
+
+
+
+        {% for notes in notes_list %}
+        <tr>
+            <td>
+                {{ notes }}
+            </td>
+        </tr>
+        {% endfor %}
+
+
+
+    </table>
+{% endblock %}
